@@ -1,8 +1,25 @@
 aid: phishme
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/phishme.png
 name: PhishMe
-description: 'PhishMe is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'PhishMe is a phishing defense and security awareness company founded in 2011 by Rohyt Belani
+  and Aaron Higbee, and rebranded as Cofense in 2018 following its acquisition by a private-equity consortium.
+  The company pioneered simulated-phishing training and crowd-sourced phishing detection, and today operates
+  the Cofense phishing-defense platform spanning Phishing Detection and Response (PDR), security awareness
+  training, managed phishing defense, and threat intelligence. Originally backed by Bessemer Venture Partners,
+  it was added to the API Evangelist network as a portfolio-company lead. The company markets a connected,
+  AI-assisted platform for post-perimeter phishing remediation rather than a public developer API; product,
+  integration, and threat-intelligence capabilities are surfaced through customer and partner channels.'
 url: https://raw.githubusercontent.com/api-evangelist/phishme/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Cybersecurity
+- Phishing
+- Email Security
+- Security Awareness Training
+- Threat Intelligence
+- Incident Response
 apis: []
+common:
+- type: DomainSecurity
+  url: security/phishme-domain-security.yml
+- type: Website
+  url: https://cofense.com
+- type: Blog
+  url: https://cofense.com/blog
+- type: Products
+  url: https://cofense.com/product-services/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
